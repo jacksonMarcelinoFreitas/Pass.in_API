@@ -1,0 +1,35 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Hello World",
+    "details": "Um evento para quem é apaixonado por programação",
+    "maximumAttendees": 100
+}
+    
+###
+
+POST http://localhost:3333/events/e97bbd6b-5248-44c5-9f36-177a81dead2f/attendees
+Content-Type: application/json
+
+{
+    "name": "Jackson Freitas",
+    "email": "jackson@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/e97bbd6b-5248-44c5-9f36-177a81dead2f
+
+###
+
+GET http://localhost:3333/attendees/2/badge
+
+###
+
+GET http://localhost:3333/attendees/2/check-in
+
+###
+
+GET http://localhost:3333/events/e97bbd6b-5248-44c5-9f36-177a81dead2f/attendees?query=
+

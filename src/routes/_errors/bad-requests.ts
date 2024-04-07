@@ -1,0 +1,1 @@
+export class BadRequest extends Error {} //classe extende a classe nativa 
